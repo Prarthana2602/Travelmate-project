@@ -1,0 +1,198 @@
+/* General Styles */
+* {
+    margin: 0;
+    padding: 0;
+    box-sizing: border-box;
+}
+
+body {
+    font-family: 'Arial', sans-serif;
+    background-image: url("https://cdn.thewirecutter.com/wp-content/media/2022/04/travelcollective-2048px-9453-3x2-1-1.jpg?auto=webp&quality=75&crop=1.91:1&width=1200");
+}
+
+header {
+    background-image: url("https://st4.depositphotos.com/2727515/19619/i/450/depositphotos_196191680-stock-photo-space-amazing-dark-theme-background.jpg");
+    font-family: "Times New Roman", Times, serif;
+    font-size: 10px;
+  text-shadow: 3px 3px 3px #4c6e74;
+    font-style: italic;
+    font-weight: bold;
+    font-size: 20px;
+    color: white;
+    padding: 1rem 0;
+    text-align: center;
+}
+
+nav {
+    display: flex;
+    justify-content: space-between;
+    align-items: center;
+    max-width: 1200px;
+    margin: 0 auto;
+}
+
+.nav-links {
+    list-style: none;
+    display: flex;
+    gap: 1.5rem;
+}
+
+.nav-links a {
+    color: white;
+    font-family: "Times New Roman", Times, serif;
+    font-style: italic;
+    text-decoration: none;
+    font-weight: bold;
+}
+
+.nav-links a:hover {
+    color: #d5da52;
+}
+
+/* Rental Hero Section */
+.rental-hero {
+    background: url('https://source.unsplash.com/1600x900/?gear,travel') no-repeat center center/cover;
+    height: 50vh;
+    color: rgb(221, 218, 218);
+    display: flex;
+    justify-content: center;
+    align-items: center;
+}
+
+.rental-hero .hero-content {
+    background-color: rgba(0, 0, 0, 0.6);
+    padding: 2rem;
+    border-radius: 10px;
+    text-align: center;
+}
+
+.rental-hero h2 {
+    font-size: 2.5rem;
+    font-family: "Times New Roman", Times, serif;
+    font-style: italic;
+    margin-bottom: 1rem;
+}
+
+.rental-hero p {
+    font-size: 1.2rem;
+    font-family: "Times New Roman", Times, serif;
+    font-style: italic;
+}
+
+/* Products Section */
+.products {
+    padding: 2rem;
+    text-align: center;
+}
+
+.products h3 {
+    font-size: 2rem;
+    margin-bottom: 1.5rem;
+}
+
+.product-list {
+    display: flex;
+    justify-content: space-around;
+    flex-wrap: wrap;
+}
+
+.product {
+    background-color: rgb(0, 0, 0);
+    border: 1px solid #ddd;
+    border-radius: 8px;
+    width: 22%;
+    margin-bottom: 2rem;
+    box-shadow: 0 4px 8px rgba(0, 0, 0, 0.1);
+}
+
+.product img {
+    border-radius: 8px 8px 0 0;
+    width: 100%;
+    height: 200px;
+}
+
+.product h4 {
+    padding: 1rem 0.5rem;
+    color: #f7f3f3;
+}
+
+.product p {
+    padding: 0.5rem;
+    font-size: 1rem;
+    color: #fcf7f7;
+}
+
+.product button {
+    display: block;
+    width: 100%;
+    padding: 1rem;
+    background-color: #484848;
+    color: white;
+    border: none;
+    cursor: pointer;
+    border-radius: 0 0 8px 8px;
+}
+
+.product button:hover {
+    background-color: #b9ab3b;
+}
+.product:hover {
+    transform: scale(1.05);
+}
+/* Cart Section */
+.cart {
+    background-color: #0a0a0a;
+    padding: 2rem;
+    margin: 2rem auto;
+    text-align: center;
+    width: 50%;
+    border: 1px solid #ddd;
+    border-radius: 8px;
+    box-shadow: 0 4px 8px rgba(0, 0, 0, 0.1);
+}
+
+.cart h3 {
+    margin-bottom: 1rem;
+    color: #ddd;
+}
+
+#cart-items {
+    margin-bottom: 1rem;
+    color: #ddd;
+}
+
+#checkout {
+    padding: 1rem 2rem;
+    background-color: #646161;
+    color: white;
+    border: none;
+    cursor: pointer;
+    border-radius: 5px;
+}
+
+#checkout:hover
+{
+    background-color: #b6b626;
+}
+footer {
+    background-color: #000000;
+    color: white;
+    text-align: center;
+    padding: 1rem 0;
+}
+
+.footer-links {
+    list-style: none;
+    display: flex;
+    justify-content: center;
+    gap: 1.5rem;
+}
+
+.footer-links a {
+    color: white;
+    text-decoration: none;
+}
+
+.footer-links a:hover {
+    color: #aaa430;
+}

@@ -1,0 +1,117 @@
+/* General Styles */
+* {
+    margin: 0;
+    padding: 0;
+    box-sizing: border-box;
+}
+
+body {
+    font-family: 'Arial', sans-serif;
+    background-image: url("https://media.licdn.com/dms/image/D4D12AQFmhLOXl5Dv-A/article-cover_image-shrink_720_1280/0/1702361014484?e=2147483647&v=beta&t=8C9oj17y-GLd_TFKeFpfLSqBoimSkNVjlgckUO0xbYE");
+    
+}
+
+header {
+    background-color: #333;
+    color: white;
+    padding: 1rem 0;
+    text-align: center;
+}
+
+nav {
+    display: flex;
+    justify-content: space-between;
+    align-items: center;
+    max-width: 1200px;
+    margin: 0 auto;
+}
+
+.nav-links {
+    list-style: none;
+    display: flex;
+    gap: 1.5rem;
+}
+
+.nav-links a {
+    color: white;
+    text-decoration: none;
+    font-weight: bold;
+}
+
+.nav-links a:hover {
+    color: #ff6347;
+}
+
+/* Success Section */
+.success-section {
+    display: flex;
+    justify-content: center;
+    align-items: center;
+    height: 80vh;
+    background-image: url("https://media.licdn.com/dms/image/D4D12AQFmhLOXl5Dv-A/article-cover_image-shrink_720_1280/0/1702361014484?e=2147483647&v=beta&t=8C9oj17y-GLd_TFKeFpfLSqBoimSkNVjlgckUO0xbYE");
+    background-repeat: no-repeat;
+    background-size: cover;
+    background-position: center center;
+}
+
+.success-content {
+    background-color: white;
+    padding: 2rem;
+    border-radius: 10px;
+    text-align: center;
+    box-shadow: 0 4px 8px rgba(0, 0, 0, 0.1);
+}
+
+.success-content h2 {
+    font-size: 2.5rem;
+    margin-bottom: 1rem;
+    color: #333;
+}
+
+.success-content p {
+    font-size: 1.2rem;
+    margin-bottom: 1.5rem;
+    color: #666;
+}
+
+.cta-button {
+    background-color: #ff6347;
+    color: white;
+    padding: 1rem 1.5rem;
+    text-decoration: none;
+    border-radius: 5px;
+    font-weight: bold;
+}
+
+.cta-button:hover {
+    background-color: #ff4500;
+}
+
+/* Footer Section */
+footer {
+    background-color: #333;
+    color: white;
+    padding: 1.5rem 0;
+    text-align: center;
+}
+
+.footer-content {
+    max-width: 1200px;
+    margin: 0 auto;
+}
+
+.footer-links {
+    list-style: none;
+    display: flex;
+    justify-content: center;
+    gap: 2rem;
+}
+
+.footer-links a {
+    color: white;
+    text-decoration: none;
+}
+
+.footer-links a:hover {
+    color: #ff6347;
+}

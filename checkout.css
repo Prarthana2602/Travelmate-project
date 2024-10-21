@@ -1,0 +1,146 @@
+/* Google Fonts - import some clean, professional fonts */
+@import url('https://fonts.googleapis.com/css2?family=Poppins:wght@400;600&family=Roboto:wght@300;400&display=swap');
+
+/* Basic Reset */
+* {
+    margin: 0;
+    padding: 0;
+    box-sizing: border-box;
+}
+
+body {
+    font-family: 'Poppins', sans-serif;
+    background-color: #f5f7fa;
+    color: #333;
+}
+
+/* Header Design */
+header {
+    background-color: #004AAD; /* Rich professional blue */
+    padding: 20px;
+    text-align: center;
+    color: #fff;
+    font-size: 1.8rem;
+    font-weight: 600;
+    box-shadow: 0 4px 6px rgba(0, 0, 0, 0.1);
+}
+
+h1 {
+    font-family: 'Poppins', sans-serif;
+    font-size: 2.2rem;
+}
+
+/* Main Container */
+.container {
+    background-color: #fff;
+    max-width: 900px;
+    margin: 50px auto;
+    padding: 30px;
+    border-radius: 12px;
+    box-shadow: 0 8px 20px rgba(0, 0, 0, 0.05);
+}
+
+/* Cart Title */
+h2 {
+    font-family: 'Roboto', sans-serif;
+    color: #004AAD;
+    font-size: 1.6rem;
+    font-weight: 600;
+    margin-bottom: 20px;
+    text-align: center;
+}
+
+/* Cart Items List */
+ul {
+    list-style: none;
+    margin-bottom: 20px;
+}
+
+ul li {
+    font-size: 1.2rem;
+    padding: 10px 0;
+    border-bottom: 1px solid #eee;
+    display: flex;
+    justify-content: space-between;
+    align-items: center;
+    transition: all 0.3s ease-in-out;
+}
+
+ul li:hover {
+    background-color: #f9f9f9;
+}
+
+ul li span {
+    font-weight: 600;
+    color: #333;
+}
+
+/* Total */
+.total {
+    font-size: 1.4rem;
+    font-weight: 600;
+    color: #004AAD;
+    text-align: right;
+    margin-top: 20px;
+}
+
+/* Success Message */
+.success-message {
+    font-size: 1.2rem;
+    color: #28a745;
+    font-weight: 500;
+    text-align: center;
+    margin-top: 30px;
+}
+
+/* Back to Rent Gear Link */
+.back-link {
+    display: inline-block;
+    margin-top: 30px;
+    text-align: center;
+    color: #004AAD;
+    font-size: 1.2rem;
+    text-decoration: none;
+    padding: 10px 20px;
+    border: 2px solid #004AAD;
+    border-radius: 8px;
+    transition: all 0.3s ease;
+}
+
+.back-link:hover {
+    background-color: #004AAD;
+    text-align: center;
+    color: white;
+    text-decoration: none;
+}
+
+/* Subtle Card Hover Animation */
+.container:hover {
+    transform: translateY(-5px);
+    box-shadow: 0 10px 30px rgba(0, 0, 0, 0.1);
+    transition: all 0.3s ease-in-out;
+}
+
+/* Responsive Design */
+@media (max-width: 768px) {
+    .container {
+        padding: 20px;
+    }
+
+    ul li {
+        font-size: 1rem;
+    }
+
+    h1 {
+        font-size: 1.8rem;
+    }
+
+    h2 {
+        font-size: 1.4rem;
+    }
+
+    .back-link {
+        font-size: 1rem;
+        padding: 8px 16px;
+    }
+}

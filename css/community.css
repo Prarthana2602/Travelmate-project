@@ -1,0 +1,317 @@
+/* General Styles */
+* {
+    margin: 0;
+    padding: 0;
+    box-sizing: border-box;
+}
+
+
+
+
+header {
+    
+    
+  
+  background-color: #00000092;
+    font-style: italic;
+    font-size: 10px;
+    font-weight: bold;
+    font-size: 20px;
+    color: #ffffff;
+    padding: 1rem 0;
+    text-align: center;
+}
+
+nav {
+    display: flex;
+    justify-content: space-between;
+    align-items: center;
+    max-width: 1200px;
+    margin: 0 auto;
+}
+
+.nav-links {
+    list-style: none;
+    display: flex;
+    gap: 1.5rem;
+}
+
+.nav-links a {
+    color: #ffffff;
+    text-decoration: none;
+    font-weight: bold;
+}
+
+.nav-links a:hover {
+    color: #f7f3f3;
+}
+.background-video {
+    position: fixed; /* Fixed positioning to cover the entire page */
+    top: 50%;
+    left: 50%;
+    min-width: 100%;
+    min-height: 100%;
+    width: auto;
+    height: auto;
+    z-index: -1;  
+    transform: translate(-50%, -50%);
+}
+
+/* Community Hero Section */
+/* Community Hero Section */
+.community-hero {
+    height: 60vh;
+    color: #ffffff;
+    font-size: small;
+    font-style: italic;
+    display: flex;
+    justify-content: center;
+    align-items: center;
+    text-align: center;
+    padding-left: 2rem;
+    margin-bottom: 300px; /* Increase margin to create space */
+}
+
+.community-hero .hero-content {
+    padding: 2rem 0; /* Remove left/right padding and keep top/bottom */
+    border-radius: 10px;
+     /* Optional: Add a background for contrast */
+   /* Optional: Adjust width to fit your design */
+    max-width: 750px; /* Set a max width */
+    width: 100%; /* Ensure it takes the full width */
+}
+
+
+.community-hero h2 {
+    font-size: 2.5rem;
+    margin-bottom: 1rem;
+}
+
+.community-hero p {
+    font-size: 1.2rem;
+}
+/* Smooth Scroll */
+html {
+    scroll-behavior: smooth;
+}
+
+/* Style the Explore More button */
+/* Add Explore More Button */
+.explore-more {
+    background-color: #3b2828;
+    color: #000000;
+    padding: 10px 20px;
+    text-align: center;
+    border-radius: 8px;
+    font-size: 16px;
+    text-decoration: none;
+    margin-top: 1rem;
+    display: inline-block;
+}
+
+.explore-more:hover {
+    background-color: #134b57;
+}
+
+/* Adjust Hero Section for Button */
+.community-hero .hero-content {
+    text-align: left;
+    max-width: 600px;
+}
+
+/* Rest of your existing CSS remains unchanged */
+
+/* Communities Section */
+.communities {
+    padding-top: 8rem; /* Increase top padding for space */
+    padding-bottom: 5rem;
+    text-align: center;
+    background-color: rgba(96, 178, 192, 0);
+    opacity: 0.8;
+}
+
+
+.communities h3 {
+    margin-bottom: 1.5rem;
+    font-size: 2rem;
+    font-weight: bold;
+    font-style: italic;
+    padding: 2rem;
+   
+    color: #000000;
+
+}
+
+.community-list {
+    display: flex;
+    justify-content: space-around;
+    flex-wrap: wrap;
+}
+
+.community {
+    background-color: #000000;
+    border: 1px solid #ddd;
+    border-radius: 8px;
+    width: 22%;
+    margin-bottom: 2rem;
+    box-shadow: 0 4px 8px rgba(0, 0, 0, 0.1);
+}
+
+.community img {
+    border-radius: 8px 8px 0 0;
+    width: 100%;
+    height: 200px;
+}
+
+.community h4 {
+    padding: 1rem 0.5rem;
+    color: #fcfafa;
+}
+
+.community p {
+    padding: 0.5rem 1rem;
+    font-size: 1rem;
+    color: #ffffff;
+}
+.community:hover {
+    transform: scale(1.05);
+}
+
+
+.button {
+    background-color: #134b57;
+    border: none;
+    color: rgb(255, 252, 252);
+    padding: 15px 32px;
+    border-radius: 20px;
+    text-align: center;
+    text-decoration: none;
+    display: inline-block;
+    font-size: 16px;
+    margin: 4px 2px;
+    cursor: pointer;
+  }
+
+.button:hover {
+    background-color: #ffffff;
+    color: rgb(0, 0, 0);
+}
+
+
+/* Traveler Tips Section */
+.traveler-tips {
+    padding: 2rem;
+    text-align: center;
+    background-color: #00000088; /* Light grey background */
+}
+
+.traveler-tips h3 {
+    margin-bottom: 1rem;
+    font-size: 2rem;
+    font-weight: bold;
+    color: #ffffff;
+}
+
+.traveler-tips ul {
+    list-style: none;
+    padding: 0;
+}
+
+.traveler-tips li {
+    padding: 0.5rem 0;
+    font-size: 1.1rem;
+    color: #ffffff; /* Dark grey for text */
+}
+
+/* Testimonials Section */
+.testimonials {
+    padding: 2rem;
+    text-align: center;
+    background-color: #134a57af; /* Light background */
+}
+
+.testimonials h3 {
+    margin-bottom: 1rem;
+    font-size: 2rem;
+    font-weight: bold;
+    color: #000000;
+}
+
+.testimonial-list {
+    display: flex;
+    justify-content: space-around;
+    flex-wrap: wrap;
+}
+
+.testimonial {
+    background-color: #134a57af;
+    background-size: cover;
+    background-position: center;
+    border: 1px solid #ddd;
+    border-radius: 8px;
+    width: 30%; /* Adjust width for better responsiveness */
+    margin: 1rem; /* Margin for spacing */
+    padding: 4rem;
+    box-shadow: 0 4px 8px rgba(0, 0, 0, 0.2);
+}
+
+.testimonial p {
+    color: #000000;
+    margin-bottom: 0.5rem;
+}
+
+.testimonial cite {
+    color: #000000; /* Light color for citations */
+}
+
+/* Join Us Section */
+.join-us {
+    padding: 2rem;
+    text-align: center;
+    background-color: #000000; /* Matching header color */
+    color: #f9f9f9; /* Light text color */
+}
+
+.join-us h3 {
+    margin-bottom: 1rem;
+    font-size: 2rem;
+    font-weight: bold;
+}
+
+.join-us button {
+    padding: 1rem 2rem;
+    background-color: #1d646b; /* Button background color */
+    color: #f9f9f9; /* Light text color */
+    border: none;
+    border-radius: 5px;
+    cursor: pointer;
+    transition: background-color 0.3s ease;
+}
+
+.join-us button:hover {
+    background-color: #0b3c4a; /* Darker shade on hover */
+}
+
+/* Footer */
+footer {
+    background-color: #000000;
+    color: white;
+    text-align: center;
+    padding: 1rem 0;
+}
+
+.footer-links {
+    list-style: none;
+    display: flex;
+    justify-content: center;
+    gap: 1.5rem;
+}
+
+.footer-links a {
+    color: white;
+    text-decoration: none;
+}
+
+.footer-links a:hover {
+    color: #185762;
+}

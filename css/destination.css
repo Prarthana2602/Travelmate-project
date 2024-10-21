@@ -1,0 +1,202 @@
+/* General Styles */
+* {
+    margin: 0;
+    padding: 0;
+    box-sizing: border-box;
+}
+
+body {
+    font-family: 'Arial', sans-serif;
+    background-image: url("https://static.independent.co.uk/2023/08/02/10/iStock-1185953092.jpg");
+}
+header {
+    background-color: #c1591d;
+    font-family: Merriweather, serif;
+    color: rgb(0, 0, 0);
+    padding: 1rem 0;
+    text-align: center;
+    position: relative; /* Position for dropdown */
+    box-shadow: 0 4px 8px rgba(0, 0, 0, 0.2); /* Adding shadow for depth */
+}
+
+nav {
+    display: flex;
+    justify-content: space-between;
+    align-items: center;
+    max-width: 1200px;
+    margin: 0 auto;
+}
+
+.nav-links {
+    list-style: none;
+    display: flex;
+    gap: 1.5rem;
+    position: relative; /* Position for dropdown */
+}
+
+.nav-links a {
+    color: rgb(14, 13, 13);
+    text-decoration: none;
+    font-weight: bold;
+    transition: color 0.3s ease, transform 0.3s ease; /* Smooth transition for effects */
+}
+
+.nav-links a:hover {
+    color: #ffffff;
+    transform: translateY(-2px); /* Slightly lift the link on hover */
+}
+
+/* Dropdown Styles */
+.dropdown {
+    position: relative; /* Position for dropdown content */
+}
+
+.dropbtn {
+    background-color: transparent; /* Transparent background */
+    color: rgb(14, 13, 13);
+    padding: 10px 15px;
+    border: none;
+    cursor: pointer;
+}
+
+.dropdown-content {
+    display: none; /* Hide by default */
+    position: absolute; /* Absolute positioning */
+    background-color: #fff; /* White background for dropdown */
+    box-shadow: 0 8px 16px rgba(0, 0, 0, 0.2); /* Shadow effect for dropdown */
+    z-index: 1; /* Ensure it appears above other elements */
+    min-width: 160px; /* Minimum width of dropdown */
+    border-radius: 5px; /* Rounded corners */
+}
+
+.dropdown-content a {
+    color: black; /* Text color for dropdown */
+    padding: 12px 16px; /* Padding for dropdown links */
+    text-decoration: none; /* Remove underline */
+    display: block; /* Block display */
+    transition: background-color 0.3s ease; /* Smooth background transition */
+}
+
+.dropdown-content a:hover {
+    background-color: #f1f1f1; /* Light background on hover */
+}
+
+/* Show the dropdown on hover */
+.dropdown:hover .dropdown-content {
+    display: block; /* Show dropdown on hover */
+}
+
+/* Optional: Add hover effect for dropdown button */
+.dropdown:hover .dropbtn {
+    color: #ffffff; /* Change text color on dropdown hover */
+}
+
+
+/* Hero Section */
+.destination-hero {
+    background: url('https://source.unsplash.com/1600x900/?travel,destination') no-repeat center center/cover;
+    height: 50vh;
+    color: white;
+    text-shadow: 3px 3px 3px #c4832d;
+    display: flex;
+    justify-content: center;
+    align-items: center;
+}
+
+.destination-hero .hero-content {
+    background-color: rgba(0, 0, 0, 0.6);
+    padding: 2rem;
+    border-radius: 10px;
+    text-align: center;
+}
+
+.destination-hero h2 {
+    font-size: 2.5rem;
+    margin-bottom: 1rem;
+}
+
+.destination-hero p {
+    font-size: 1.2rem;
+}
+
+/* Destinations Section */
+.destinations {
+    padding: 2rem;
+    text-align: center;
+}
+
+.destinations h3 {
+    font-size: 2rem;
+    margin-bottom: 1.5rem;
+}
+
+.destination-list {
+    display: flex;
+    justify-content: space-around;
+    flex-wrap: wrap;
+}
+
+.destination {
+    background-color: white;
+    border: 1px solid #ddd;
+    border-radius: 8px;
+    width: 22%;
+    margin-bottom: 2rem;
+    box-shadow: 0 4px 8px rgba(0, 0, 0, 0.1);
+}
+
+.destination img {
+    border-radius: 8px 8px 0 0;
+    width: 100%;
+    height: 200px;
+}
+
+.destination h4 {
+    padding: 1rem 0.5rem;
+    color: #333;
+}
+
+.destination p {
+    padding: 0.5rem;
+    font-size: 1rem;
+    color: #666;
+}
+
+.destination a.cta-button {
+    display: block;
+    background-color: #ff6347;
+    color: white;
+    padding: 1rem;
+    text-decoration: none;
+    margin: 1rem;
+    border-radius: 5px;
+    font-weight: bold;
+}
+
+.destination a.cta-button:hover {
+    background-color: #ff4500;
+}
+
+/* Footer Section */
+footer {
+    background-color: #333;
+    color: white;
+    text-align: center;
+    padding: 1rem 0;
+}
+
+.footer-links {
+    list-style: none;
+    display: flex;
+    justify-content: center;
+    gap: 1.5rem;
+}
+
+.footer-links a {
+    color: white;
+    text-decoration: none;
+}
+
+.footer-links a:hover {
+    color: #cb6424;
+}
