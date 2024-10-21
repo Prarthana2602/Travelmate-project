@@ -1,0 +1,161 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+    <meta charset="UTF-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <meta name="description" content="TravelMate - Connect with like-minded travelers and access affordable travel gear.">
+    <title>TravelMate - Your Ultimate Travel Companion</title>
+    <link rel="stylesheet" href="styles.css">
+    <link rel="stylesheet" href="https://fonts.googleapis.com/css?family=Merriweather|Open+Sans">
+</head>
+<body>
+
+    <!-- Header Section -->
+    <header>
+        <nav>
+            <div class="logo">
+                <h1>TravelMate</h1>
+            </div>
+            <ul class="nav-links">
+                <li class="dropdown">
+                    <a href="#" class="dropdown-toggle">&#9662;</a>
+                    <ul class="dropdown-menu">
+                        <li><a href="destination.html">Destinations</a></li>
+                        <li><a href="community.html">Communities</a></li>
+                        <li><a href="rental.html">Rent Gear</a></li>
+                        <li><a href="index.html">Logout</a></li>
+                    </ul>
+                </li>
+            </ul>
+        </nav>
+    </header>
+
+    <!-- Hero Section -->
+    <section class="hero">
+        <video autoplay muted loop class="background-video">
+            <source src="explore.mp4" type="video/mp4">
+            Your browser does not support the video tag.
+        </video>
+        <div class="hero-content">
+            <h2>Explore the World with Like-Minded Travelers</h2>
+            <p>Find your travel mates, share experiences, and explore new destinations together.</p>
+            <div class="search-bar">
+                <input type="text" id="searchInput" placeholder="Search destinations, gear, or travelers...">
+                <button id="searchBtn">Search</button>
+            </div>
+        </div>
+    </section>
+
+    <!-- Features Section -->
+    <section class="features">
+        <div class="feature">
+            <h3>Connect with Travelers</h3>
+            <p>Match with solo or group travelers based on interests and destinations.</p>
+        </div>
+        <div class="feature">
+            <h3>Rent Travel Gear</h3>
+            <p>Access affordable travel gear for your next adventure.</p>
+        </div>
+        <div class="feature">
+            <h3>Join Travel Communities</h3>
+            <p>Be a part of our growing travel community and make lifelong connections.</p>
+        </div>
+    </section>
+
+    <!-- Call to Action Section -->
+    <section class="cta">
+        <h2>Start Your Journey with TravelMate Today!</h2>
+        <p>Whether you’re looking for a solo adventure or a group trip, we’ve got you covered. Join now and explore the world!</p>
+        <div>
+            <a href="community.html" class="button">Join Now</a>
+        </div>
+    </section>
+    <!-- Featured Destinations Section -->
+<section class="featured-destinations">
+    <h2>Top Travel Destinations</h2>
+    <div class="destinations-grid">
+        <div class="destination">
+            <img src="https://cdn.britannica.com/31/255531-050-B7E07090/eiffel-tower-paris-france-champ-de-mars-view.jpg" alt="Paris" />
+            <h3>Paris, France</h3>
+            <p>Explore the city of love and lights with our travel communities.</p>
+        </div>
+        <div class="destination">
+            <img src="https://offbeatjapan.com/wp-content/uploads/2011/10/tokyo-tower-night-landmark.jpg" alt="Tokyo" />
+            <h3>Tokyo, Japan</h3>
+            <p>Experience the vibrant culture and futuristic lifestyle of Tokyo.</p>
+        </div>
+        <div class="destination">
+            <img src="https://media.digitalnomads.world/wp-content/uploads/2021/01/20120709/bali-for-digital-nomads.jpg" alt="Bali" />
+            <h3>Bali, Indonesia</h3>
+            <p>Find your zen in the serene and scenic landscapes of Bali.</p>
+        </div>
+    </div>
+    <div></div>
+    <div>
+        <a href="destination.html" class="button">Explore more</a>
+    </div>
+</section>
+
+<!-- Testimonials Section -->
+<section class="testimonials">
+    <h2>What Our Travelers Say</h2>
+    <div class="testimonial-grid">
+        <div class="testimonial">
+            <p>"TravelMate made my solo trip so much easier! I found travel buddies and saved a lot on gear rentals."</p>
+            <h4>- Sarah M.</h4>
+        </div>
+        <div class="testimonial">
+            <p>"The community feature is great. I connected with a group of fellow hikers and it was a memorable experience."</p>
+            <h4>- Mike J.</h4>
+        </div>
+        <div class="testimonial">
+            <p>"Highly recommend TravelMate for anyone who wants affordable travel gear and amazing destination suggestions!"</p>
+            <h4>- Emma T.</h4>
+        </div>
+    </div>
+</section>
+
+
+    <!-- Footer Section -->
+    <footer>
+        <div class="footer-content">
+            <p>© 2024 TravelMate. All rights reserved.</p>
+            <ul class="footer-links">
+                <li><a href="privacy-policy.html">Privacy Policy</a></li>
+                <li><a href="#">Terms of Service</a></li>
+                <li><a href="contact.html">Contact Us</a></li>
+            </ul>
+        </div>
+    </footer>
+
+    <script>
+        // Search functionality
+        document.getElementById('searchBtn').addEventListener('click', function() {
+            const searchInput = document.getElementById('searchInput').value.toLowerCase();
+            // Keyword matching and redirection
+            if (searchInput.includes('destination') || searchInput.includes('give me suggestion for destinations to visit')) {
+                window.location.href = 'destination.html';
+            } else if (searchInput.includes('community') || searchInput.includes('communities') || searchInput.includes('how to join community')) {
+                window.location.href = 'community.html';
+            } else if (searchInput.includes('gear') || searchInput.includes('rent') || searchInput.includes('how to rent products')) {
+                window.location.href = 'rental.html';
+            } else if (searchInput.includes('contact') || searchInput.includes('how to contact')) {
+                window.location.href = 'contact.html';
+            } else if (searchInput.includes('do you have hiking community') || searchInput.includes('I want to join hiking community')) {
+                window.location.href = 'hiking.html';
+            } else if (searchInput.includes('do you have beach community') || searchInput.includes('I want to join beach lovers community')) {
+                window.location.href = 'beach.html';
+            } else if (searchInput.includes('do you have historical places community') || searchInput.includes('I want to join historical places community')) {
+                window.location.href = 'history buffs.html';
+            } else if (searchInput.includes('policy') || searchInput.includes('what are your policies')) {
+                window.location.href = 'privacy-policy.html';    
+            } else if (searchInput.includes('login')) {
+                window.location.href = 'login.html';
+            } else {
+                alert('No matching page found. Try searching for "destinations", "communities", "gear", or "login".');
+            }
+        });
+    </script>
+
+</body>
+</html>

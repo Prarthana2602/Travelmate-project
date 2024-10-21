@@ -1,0 +1,147 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+    <meta charset="UTF-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <meta name="description" content="Rent travel gear at affordable prices with TravelMate">
+    <title>TravelMate - Rent Travel Gear</title>
+    <link rel="stylesheet" href="css/rental.css">
+    <link rel="stylesheet" href="https://fonts.googleapis.com/css?family=Merriweather|Open+Sans">
+</head>
+<body>
+
+    <!-- Header Section --> 
+    <header>
+        <nav>
+            <div class="logo">
+                <h1>TravelMate</h1>
+            </div>
+            <ul class="nav-links">
+                <li><a href="home.html">Home</a></li>
+                <li><a href="community.html">Communities</a></li>
+                <li><a href="rental.html">Rent Gear</a></li>
+                <li><a href="destination.html">Destinations</a></li>
+                <li><a href="index.html">Logout</a></li>
+            </ul>
+        </nav>
+    </header>
+
+    <!-- Rental Hero Section -->
+    <section class="rental-hero">
+        <div class="hero-content">
+            <h2>Rent Affordable Travel Gear</h2>
+            <p>Choose from our wide selection of travel gear and save money on your next trip.</p>
+        </div>
+    </section>
+
+    <!-- Rental Products Section -->
+    <section class="products">
+        <h3>Our Rental Products</h3>
+        <div class="product-list">
+            <div class="product">
+                <img src="https://www.rei.com/dam/skrobecki_071217_1458_tents_camping_choose_tents_for_camping_choose_lg.jpg" alt="Camping Tent">
+                <h4>Camping Tent</h4>
+                <p>$20 per day</p>
+                <button class="add-to-cart" data-product="Camping Tent" data-price="20">Add to Cart</button>
+            </div>
+
+            <div class="product">
+                <img src="https://static.independent.co.uk/2024/03/20/12/Travel-backpack-hero.png?width=1200&height=1200&fit=crop" alt="Travel Backpack">
+                <h4>Travel Backpack</h4>
+                <p>$15 per day</p>
+                <button class="add-to-cart" data-product="Travel Backpack" data-price="15">Add to Cart</button>
+            </div>
+
+            <div class="product">
+                <img src="https://i.pcmag.com/imagery/roundups/03wtEym7INA75ZavVx95FwX-13..v1631714663.jpg" alt="Action Camera">
+                <h4>Action Camera</h4>
+                <p>$25 per day</p>
+                <button class="add-to-cart" data-product="Action Camera" data-price="25">Add to Cart</button>
+            </div>
+
+            <div class="product">
+                <img src="https://blogstudio.s3.theshoppad.net/seatosummitusa/c201a5910c88a812651bd8c54072e87c.jpg" alt="Sleeping Bag">
+                <h4>Sleeping Bag</h4>
+                <p>$10 per day</p>
+                <button class="add-to-cart" data-product="Sleeping Bag" data-price="10">Add to Cart</button>
+            </div>
+        </div>
+    </section>
+
+    <!-- Cart Section -->
+    <section class="cart">
+        <h3>Your Cart</h3>
+        <div id="cart-items">
+            <p>No items in the cart</p>
+        </div>
+        <p>Total: $<span id="cart-total">0</span></p>
+        <button id="checkout">Checkout</button>
+    </section>
+
+    <!-- Footer Section -->
+    <footer>
+        <div class="footer-content">
+            <p>© 2024 TravelMate. All rights reserved.</p>
+            <ul class="footer-links">
+                <li><a href="#">Privacy Policy</a></li>
+                <li><a href="#">Terms of Service</a></li>
+                <li><a href="contact.html">Contact Us</a></li>
+            </ul>
+        </div>
+    </footer>
+
+    <!-- JavaScript to manage the cart -->
+     <!-- Inside rental.html -->
+<script>
+    const cart = [];
+    const cartTotalElement = document.getElementById('cart-total');
+    const cartItemsElement = document.getElementById('cart-items');
+    let total = 0;
+
+    document.querySelectorAll('.add-to-cart').forEach(button => {
+        button.addEventListener('click', () => {
+            const productName = button.getAttribute('data-product');
+            const price = parseFloat(button.getAttribute('data-price'));
+
+            // Update the cart array
+            cart.push({ productName, price });
+            total += price;
+
+            // Update cart display
+            updateCartDisplay();
+            addToCartDatabase(productName, price);
+        });
+    });
+
+    function updateCartDisplay() {
+        if (cart.length > 0) {
+            cartItemsElement.innerHTML = '';
+            cart.forEach(item => {
+                cartItemsElement.innerHTML += `<p>${item.productName}: $${item.price.toFixed(2)}</p>`;
+            });
+            cartTotalElement.textContent = total.toFixed(2);
+        } else {
+            cartItemsElement.innerHTML = '<p>No items in the cart</p>';
+            cartTotalElement.textContent = '0';
+        }
+    }
+
+    function addToCartDatabase(productName, price) {
+        const xhr = new XMLHttpRequest();
+        xhr.open("POST", "add_to_cart.php", true);
+        xhr.setRequestHeader("Content-Type", "application/x-www-form-urlencoded");
+        xhr.send(`product_name=${encodeURIComponent(productName)}&price=${encodeURIComponent(price)}`);
+    }
+
+    document.getElementById('checkout').addEventListener('click', () => {
+        if (cart.length > 0) {
+            alert('Items added to the cart successfully!');
+            window.location.href = 'checkout.php';
+        } else {
+            alert('Your cart is empty. Please add items before proceeding to checkout.');
+        }
+    });
+</script>
+
+</body>
+</html>

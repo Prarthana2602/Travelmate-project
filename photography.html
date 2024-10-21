@@ -1,0 +1,35 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+    <meta charset="UTF-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <title>Photography Explorers</title>
+    <link href="Photography.css" rel="stylesheet">
+    
+</head>
+<body>
+
+    <div class="container mt-5">
+        <h1>PHOTOGRAPHY EXPLORER</h1>
+        <p>Fill out the form below to join the photography explorer community.</p>
+        <!-- Booking Form -->
+        <form action="submit_booking.php" onsubmit="return validate_form" method="POST">
+            <div class="mb-3">
+                <label for="name" class="form-label">Name</label>
+                <input type="text" class="form-control" name="name">
+            </div>
+            <div class="mb-3">
+                <label for="Age" class="form-label">Age</label>
+                <input type="number" class="form-control" name="age" min="18">
+            </div>
+            <div class="mb-3">
+                <label for="Phone" class="form-label">Phone</label>
+                <input type="tel" class="form-control" name="phone" pattern="[0-9]{10}" required />
+            </div>
+            <button type="submit" class="btn btn-primary">Submit</button>
+        </form>
+    </div>
+
+    
+</body>
+</html>

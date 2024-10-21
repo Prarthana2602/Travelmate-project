@@ -1,0 +1,105 @@
+/* General body styles */
+body {
+    background-image: url('https://static.toiimg.com/photo/65292208.cms'); /* Path to your image */
+    background-size: cover;
+    background-position: center;
+    background-repeat: no-repeat;
+    height: 100vh;
+    font-family: 'Poppins', sans-serif; /* Clean and modern font */
+    display: flex;
+    justify-content: center;
+    align-items: center;
+    margin: 0;
+}
+
+/* Container styles for the booking form */
+.container {
+    background-color: rgba(90, 89, 89, 0.7); /* White background with transparency */
+    padding: 40px; /* Adds space inside the container */
+    border-radius: 30px; /* Rounded corners for a smooth look */
+    box-shadow: 0 10px 25px rgba(0, 0, 0, 0.2); /* Soft shadow effect */
+    max-width: 600px; /* Sets a max width */
+    width: 100%; /* Makes sure container takes full width */
+    text-align: center; /* Centers the content */
+}
+
+/* Heading styles */
+h1 {
+    color: #000000; /* Primary blue color */
+    font-size: 32px;
+    margin-bottom: 20px;
+    font-weight: bold;
+    font-style: italic;
+}
+
+/* Paragraph styles */
+p {
+    color: #000000; /* Darker text for readability */
+    font-size: 16px;
+    margin-bottom: 30px;
+}
+
+/* Form label styles */
+.form-label {
+    font-weight: 600; /* Bold label */
+    color: #000000; /* Soft gray for labels */
+    font-size: 16px;
+    display: block;
+    margin-bottom: 5px;
+    text-align: left;
+}
+
+/* Input styles */
+.form-control {
+    border-radius: 8px; /* Soft rounded inputs */
+    border: 1px solid #ccc; /* Light gray border */
+    padding: 12px; /* Adds space inside input */
+    font-size: 16px; /* Slightly larger text */
+    margin-bottom: 20px; /* Space between inputs */
+    width: 100%; /* Ensures full width */
+    box-sizing: border-box;
+    transition: border-color 0.3s ease; /* Smooth border transition */
+}
+
+/* Focus state for inputs */
+.form-control:focus {
+    border-color: #007bff; /* Blue border on focus */
+    outline: none; /* Removes default outline */
+}
+
+/* Button styles */
+.btn {
+    background-color: #000000; /* Primary blue color */
+    border: none; /* No border */
+    border-radius: 50px; /* Rounded button */
+    padding: 12px 30px; /* Adds padding */
+    font-size: 16px; /* Larger font size */
+    color: #fff; /* White text */
+    cursor: pointer; /* Pointer cursor on hover */
+    transition: background-color 0.3s ease; /* Smooth hover transition */
+    width: 100%;
+}
+
+/* Button hover effect */
+.btn:hover {
+    background-color: #0056b3; /* Darker blue on hover */
+}
+
+/* Mobile responsive adjustments */
+@media (max-width: 768px) {
+    .container {
+        padding: 20px; /* Reduce padding on smaller screens */
+    }
+
+    h1 {
+        font-size: 24px; /* Adjust heading size */
+    }
+
+    p {
+        font-size: 14px; /* Adjust paragraph size */
+    }
+
+    .btn {
+        font-size: 14px; /* Adjust button text size */
+    }
+}

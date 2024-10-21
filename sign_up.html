@@ -1,0 +1,58 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+    <meta charset="UTF-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <meta name="description" content="Sign Up for TravelMate">
+    <title>TravelMate - Sign Up</title>
+    <link rel="stylesheet" href="css/signup.css">
+</head>
+<body>
+
+    <!-- Header Section -->
+    <header>
+        
+            <div class="logo">
+                <h1>TravelMate</h1>
+            </div>
+           
+       
+    </header>
+
+    <!-- Sign-Up Section -->
+    <section class="signup-section">
+        <div class="signup-container">
+            <h2>Create Your Account</h2>
+            <form action="signup.php" method="POST">
+                <label for="name">Name:</label>
+                <input type="text" id="name" name="name" placeholder="Enter your name" required>
+
+                <label for="email">Email:</label>
+                <input type="email" id="email" name="email" placeholder="Enter your email" required>
+
+                <label for="password">Password:</label>
+                <input type="password" id="password" name="password" placeholder="Create a password" required>
+
+                <label for="confirm-password">Confirm Password:</label>
+                <input type="password" id="confirm-password" name="confirm-password" placeholder="Confirm your password" required>
+
+                <button type="submit" class="Signup-button">Signup</button>
+            </form>
+            <p>Already have an account? <a href="index.html">Login here</a></p>
+        </div>
+    </section>
+
+    <!-- Footer Section -->
+    <footer>
+        <div class="footer-content">
+            <p>© 2024 TravelMate. All rights reserved.</p>
+            <ul class="footer-links">
+                <li><a href="privacy-policy.html">Privacy Policy</a></li>
+                <li><a href="#">Terms of Service</a></li>
+                <li><a href="contact.html">Contact Us</a></li>
+            </ul>
+        </div>
+    </footer>
+
+</body>
+</html>
